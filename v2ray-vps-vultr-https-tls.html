@@ -50,20 +50,20 @@
     
     
     <meta name="keywords" content="vultr,vps,v2ray,搭建服务">
-    <meta name="description" content="现在使用 ss 搭建的服务 不太稳定了， IP 容易被 bang 掉。想要查询第一手技术资料，确实有点麻烦，不过最近 v2ray 的加密方式更加稳定，可以使用一件脚本快速搭建 v2ray。 vps 购买关于云服务器，对性价比要求高的可以考虑 vultr ， 获得 50 美元优惠购买方式可参考：如何优惠购买 vultr vps 连接如果你使用的是 Linux 或者 Mac 系统，可以直接使用 ssh">
+    <meta name="description" content="除了使用 ss 搭建的服务 之外，也要一种新的搭建方式，最近 v2ray 的加密方式相对稳定，可以使用一键脚本快速搭建 v2ray。 vps 购买关于云服务器，对性价比要求高的可以考虑 vultr ， 获得 50 美元优惠购买方式可参考：如何优惠购买 vultr vps 连接如果你使用的是 Linux 或者 Mac 系统，可以直接使用 ssh 命令连接 vps ，如果是 win 用户可以下载连接">
 <meta name="keywords" content="vultr,vps,v2ray,搭建服务">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用vultr(vps)搭建 v2ray 快速上网教程 超简单10分钟搞定">
 <meta property="og:url" content="https://wistbean.github.io/v2ray-vps-vultr-https-tls.html">
 <meta property="og:site_name" content="肯定会">
-<meta property="og:description" content="现在使用 ss 搭建的服务 不太稳定了， IP 容易被 bang 掉。想要查询第一手技术资料，确实有点麻烦，不过最近 v2ray 的加密方式更加稳定，可以使用一件脚本快速搭建 v2ray。 vps 购买关于云服务器，对性价比要求高的可以考虑 vultr ， 获得 50 美元优惠购买方式可参考：如何优惠购买 vultr vps 连接如果你使用的是 Linux 或者 Mac 系统，可以直接使用 ssh">
+<meta property="og:description" content="除了使用 ss 搭建的服务 之外，也要一种新的搭建方式，最近 v2ray 的加密方式相对稳定，可以使用一键脚本快速搭建 v2ray。 vps 购买关于云服务器，对性价比要求高的可以考虑 vultr ， 获得 50 美元优惠购买方式可参考：如何优惠购买 vultr vps 连接如果你使用的是 Linux 或者 Mac 系统，可以直接使用 ssh 命令连接 vps ，如果是 win 用户可以下载连接">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://wistbean.github.io/images/v2ray-install.png">
 <meta property="og:image" content="https://wistbean.github.io/images/v2ray-info.png">
-<meta property="og:updated_time" content="2020-02-09T10:27:39.107Z">
+<meta property="og:updated_time" content="2020-02-10T14:52:22.314Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用vultr(vps)搭建 v2ray 快速上网教程 超简单10分钟搞定">
-<meta name="twitter:description" content="现在使用 ss 搭建的服务 不太稳定了， IP 容易被 bang 掉。想要查询第一手技术资料，确实有点麻烦，不过最近 v2ray 的加密方式更加稳定，可以使用一件脚本快速搭建 v2ray。 vps 购买关于云服务器，对性价比要求高的可以考虑 vultr ， 获得 50 美元优惠购买方式可参考：如何优惠购买 vultr vps 连接如果你使用的是 Linux 或者 Mac 系统，可以直接使用 ssh">
+<meta name="twitter:description" content="除了使用 ss 搭建的服务 之外，也要一种新的搭建方式，最近 v2ray 的加密方式相对稳定，可以使用一键脚本快速搭建 v2ray。 vps 购买关于云服务器，对性价比要求高的可以考虑 vultr ， 获得 50 美元优惠购买方式可参考：如何优惠购买 vultr vps 连接如果你使用的是 Linux 或者 Mac 系统，可以直接使用 ssh 命令连接 vps ，如果是 win 用户可以下载连接">
 <meta name="twitter:image" content="https://wistbean.github.io/images/v2ray-install.png">
     
         <link rel="alternate" type="application/atom+xml" title="肯定会" href="/atom.xml">
@@ -207,7 +207,7 @@
     <aside class="post-widget">
         <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
             <h4>目录</h4>
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#vps-购买"><span class="post-toc-number">1.</span> <span class="post-toc-text">vps 购买</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#vps-连接"><span class="post-toc-number">2.</span> <span class="post-toc-text">vps 连接</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#准备一个域名解析到你的服务器"><span class="post-toc-number">3.</span> <span class="post-toc-text">准备一个域名解析到你的服务器</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#快速搭建-v2ray"><span class="post-toc-number">4.</span> <span class="post-toc-text">快速搭建 v2ray</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装-curl"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">安装 curl</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#下载-v2ray-脚本"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">下载 v2ray 脚本</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#开始安装-v2ray"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">开始安装 v2ray</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#使用-v2ray"><span class="post-toc-number">4.4.</span> <span class="post-toc-text">使用 v2ray</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#vps-购买"><span class="post-toc-number">1.</span> <span class="post-toc-text">vps 购买</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#vps-连接"><span class="post-toc-number">2.</span> <span class="post-toc-text">vps 连接</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#准备一个域名解析到你的服务器-可选"><span class="post-toc-number">3.</span> <span class="post-toc-text">准备一个域名解析到你的服务器(可选)</span></a></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#快速搭建-v2ray"><span class="post-toc-number">4.</span> <span class="post-toc-text">快速搭建 v2ray</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装-curl"><span class="post-toc-number">4.1.</span> <span class="post-toc-text">安装 curl</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#下载-v2ray-脚本"><span class="post-toc-number">4.2.</span> <span class="post-toc-text">下载 v2ray 脚本</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#开始安装-v2ray"><span class="post-toc-number">4.3.</span> <span class="post-toc-text">开始安装 v2ray</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#使用-v2ray"><span class="post-toc-number">4.4.</span> <span class="post-toc-text">使用 v2ray</span></a></li></ol></li></ol>
         </nav>
     </aside>
 
@@ -229,13 +229,13 @@
 
         </div>
         <div class="post-content" id="post-content" itemprop="postContent">
-            <p>现在使用 <a href="https://wistbean.github.io/vultr-vps-bbr-ss.html">ss 搭建的服务</a> 不太稳定了， IP 容易被 bang 掉。想要查询第一手技术资料，确实有点麻烦，不过最近 v2ray 的加密方式更加稳定，可以使用一件脚本快速搭建 v2ray。</p>
+            <p>除了使用 <a href="https://wistbean.github.io/vultr-vps-bbr-ss.html">ss 搭建的服务</a> 之外，也要一种新的搭建方式，最近 v2ray 的加密方式相对稳定，可以使用一键脚本快速搭建 v2ray。</p>
 <h1 id="vps-购买"><a href="#vps-购买" class="headerlink" title="vps 购买"></a>vps 购买</h1><p>关于云服务器，对性价比要求高的可以考虑 <a href="https://www.vultr.com/?ref=7772384-4F" target="_blank" rel="noopener">vultr</a> ， 获得 50 美元优惠购买方式可参考：<a href="https://wistbean.github.io/vultr-vps-bbr-ss.html#%E4%BC%98%E6%83%A0%E8%B4%AD%E4%B9%B0vultr">如何优惠购买 vultr</a></p>
 <h1 id="vps-连接"><a href="#vps-连接" class="headerlink" title="vps 连接"></a>vps 连接</h1><p>如果你使用的是 Linux 或者 Mac 系统，可以直接使用 ssh 命令连接 vps ，如果是 win 用户可以下载连接 vps 的工具，具体连接方式：<a href="https://wistbean.github.io/vultr-vps-bbr-ss.html#%E4%BD%BF%E7%94%A8vultr%E6%90%AD%E5%BB%BAss%E6%9C%8D%E5%8A%A1%E5%99%A8">连接 vps </a></p>
-<h1 id="准备一个域名解析到你的服务器"><a href="#准备一个域名解析到你的服务器" class="headerlink" title="准备一个域名解析到你的服务器"></a>准备一个域名解析到你的服务器</h1><p>因为 v2ray 加密方式比较特殊（可以网站伪装），需要域名，关于域名购买和 DNS 解析：<a href="https://wistbean.github.io/build-personal-website.html#%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D">域名绑定</a></p>
+<h1 id="准备一个域名解析到你的服务器-可选"><a href="#准备一个域名解析到你的服务器-可选" class="headerlink" title="准备一个域名解析到你的服务器(可选)"></a>准备一个域名解析到你的服务器(可选)</h1><p>因为 v2ray 加密方式比较特殊（可以网站伪装），需要域名，关于域名购买和 DNS 解析：<a href="https://wistbean.github.io/build-personal-website.html#%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D">域名绑定</a>，如果你不想绑定域名，可以选择 TCP 协议的模式进行安装。</p>
 <h1 id="快速搭建-v2ray"><a href="#快速搭建-v2ray" class="headerlink" title="快速搭建 v2ray"></a>快速搭建 v2ray</h1><h2 id="安装-curl"><a href="#安装-curl" class="headerlink" title="安装 curl"></a>安装 curl</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum -y install curl</span><br></pre></td></tr></table></figure>
 <h2 id="下载-v2ray-脚本"><a href="#下载-v2ray-脚本" class="headerlink" title="下载 v2ray 脚本"></a>下载 v2ray 脚本</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">bash &lt;(curl -s -L https://git.io/v2ray.sh)</span><br></pre></td></tr></table></figure>
-<h2 id="开始安装-v2ray"><a href="#开始安装-v2ray" class="headerlink" title="开始安装 v2ray"></a>开始安装 v2ray</h2><p>选择 1 进行安装，协议方式建议选 4 ：</p>
+<h2 id="开始安装-v2ray"><a href="#开始安装-v2ray" class="headerlink" title="开始安装 v2ray"></a>开始安装 v2ray</h2><p>选择 1 进行安装，有域名的协议方式建议选 4，没有域名直接回车就可以。</p>
 <figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
@@ -260,7 +260,7 @@
     <div class="content">
       <!--  
 <span class="post-time">
-    最后更新时间：<time datetime="2020-02-09T10:27:39.107Z" itemprop="dateUpdated">2020-02-09 18:27:39</time>
+    最后更新时间：<time datetime="2020-02-10T14:52:22.314Z" itemprop="dateUpdated">2020-02-10 22:52:22</time>
 </span><br>
 
 
