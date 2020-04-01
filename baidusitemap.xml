@@ -4,6 +4,32 @@
 
     
   <url>
+    <loc>https://wistbean.github.io/ss-ip-vps-quick-build.html</loc>
+    <lastmod>2020-04-01T16:55:15.648Z</lastmod>
+    <data>
+        <display>
+        <title>快速秒键SS，自动切换IP</title>
+        <pubTime>2020-03-20T08:40:37.000Z</pubTime>
+        
+        <tag>vps</tag>
+         
+        <tag>shadow socket</tag>
+         
+        <tag>搭建ss</tag>
+         
+        <tag>自动切换IP</tag>
+         
+         
+           
+             
+              <breadCrumb title="vps" url="https://wistbean.github.io/categories/vps/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://wistbean.github.io/vultr-ssr-bbr-build-quick.html</loc>
     <lastmod>2020-03-22T08:34:09.131Z</lastmod>
     <data>
@@ -55,32 +81,6 @@
           
              
               <breadCrumb title="vultr" url="https://wistbean.github.io/categories/vpn/vps/vultr/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://wistbean.github.io/ss-ip-vps-quick-build.html</loc>
-    <lastmod>2020-03-20T09:10:17.496Z</lastmod>
-    <data>
-        <display>
-        <title>快速秒键SS，自动切换IP</title>
-        <pubTime>2020-03-20T08:40:37.000Z</pubTime>
-        
-        <tag>vps</tag>
-         
-        <tag>shadow socket</tag>
-         
-        <tag>搭建ss</tag>
-         
-        <tag>自动切换IP</tag>
-         
-         
-           
-             
-              <breadCrumb title="vps" url="https://wistbean.github.io/categories/vps/"/>
           
         </display>
     </data>
